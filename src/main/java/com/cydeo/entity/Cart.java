@@ -20,11 +20,12 @@ public class Cart extends BaseEntity{
     @Enumerated(EnumType.STRING)
     private CartState cartState;
 
+    @ManyToOne
+    private Discount discount;
+
     //one customer can have many carts; many state of carts:
     // checks out a cart and adds new products etc.
     @ManyToOne
     private Customer customer;
 
-    @ManyToOne
-    private Discount discount;
 }

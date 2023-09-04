@@ -15,7 +15,7 @@ import java.math.BigInteger;
 @Setter
 @NoArgsConstructor
 public class Balance extends BaseEntity{
-    private BigDecimal numeric;
+    private BigDecimal amount;
 
     @OneToOne
     private Customer customer;

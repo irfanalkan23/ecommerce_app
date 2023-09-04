@@ -12,7 +12,6 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name = "customers")
 public class Customer extends BaseEntity{
     private String email;
     private String firstName;

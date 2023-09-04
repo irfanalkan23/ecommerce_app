@@ -26,7 +26,7 @@ public class Product extends BaseEntity{
     @JoinTable(name = "product_category_rel",
             joinColumns = @JoinColumn(name = "p_id"),
             inverseJoinColumns = @JoinColumn(name = "c_id"))
-    private List<Category> categories;
+    private List<Category> categoryList;
     //a product can belong to max 5-10 categories. but a category can have thousands of products.
     //having the field here is less burden/load. lighter class.
     //and we'll always use unidirectional; no annotations on the other side
